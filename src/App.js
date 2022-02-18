@@ -5,13 +5,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./homepage.css"
 import MyNavbar from './components/MyNavbar'
 import HomePage from './components/HomePage'
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import AlbumPage from './components/AlbumPage'
 
 function App() {
   return (
     <div className="App">
-      <MyNavbar />
-     <HomePage />
+     <BrowserRouter>
+     <MyNavbar />
+     
+    <Routes> 
+       
+     <Route path="/album"element={<AlbumPage />}/>
+     <Route path="/" element={<HomePage />} />
+     </Routes>
       <MusicPlayer />
+      </BrowserRouter>
     </div>
   );
 }
