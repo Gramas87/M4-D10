@@ -24,7 +24,7 @@ const HomePage = () =>{
 
   }
   
-  albums.map((album) => {})
+
   
   
   
@@ -321,4 +321,4 @@ const HomePage = () =>{
 )
  }
 
- export default HomePage
+    export default HomePage

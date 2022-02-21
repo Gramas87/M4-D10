@@ -16,7 +16,7 @@ function App() {
      
     <Routes> 
        
-     <Route path="/album"element={<AlbumPage />}/>
+     
      <Route path="/" element={<HomePage />} />
      </Routes>
       <MusicPlayer />
